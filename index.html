@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Java Classes with Rohit Sonar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container, .section {
+            text-align: left;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .container h1, .section h2 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff9800;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #f57c00;
+        }
+
+        .whatsapp-link {
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.2);
+            margin-top: auto;
+            width: 100%;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .section {
+            display: none;
+        }
+
+        #home {
+            display: block;
+        }
+
+        header {
+          width: 100%;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-links">
+            <a onclick="showSection('home')">Home</a>
+            <a onclick="showSection('about')">About Me</a>
+            <a onclick="showSection('contact')">Contact Us</a>
+        </div>
+    </header>
+
+    <div id="home" class="container">
+        <h1>Online Java Classes for ICSE 9 & 10 with Rohit Sonar</h1>
+        <p>
+            Embark on a comprehensive Java programming journey, designed specifically for ICSE Class 9 and 10 students across India! I, Rohit Sonar, a BCA graduate with 3 years of coding teaching experience, am excited to offer engaging and interactive online Java classes.
+        </p>
+        <p>
+            These daily online sessions will be conducted via Google Meet, ensuring you can learn from the comfort of your home, regardless of your location. We will cover all the essential concepts of Java, building a strong foundation for your exams. Classes are offered at a nominal fee of Rs 1000 per month.
+        </p>
+        <div class="image-container">
+            <img src="https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/adf00a3402bf.jpeg"Online Coding Class Illustration">
+        </div>
+        <a href="https://chat.whatsapp.com/DrE6SwtnOfs4TxBDBwsNlC" class="button">Join WhatsApp Group</a>
+        <p class="whatsapp-link">Join the WhatsApp group for class updates, Google Meet links, and discussions.</p>
+    </div>
+
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <div class="image-container">
+            <img src="https://eazytutors.com/assets/img/co-6.jpg"Teacher Explaining Online Class Illustration">
+        </div>
+        <p>
+            Hello students! I'm Rohit Sonar, a passionate educator with a Bachelor's in Computer Applications (BCA). For the past three years, I've been guiding students through the exciting world of coding. My teaching philosophy revolves around making complex concepts easy to understand and fostering a love for programming.
+        </p>
+        <p>
+            My experience with the ICSE curriculum has allowed me to design a course that aligns perfectly with your syllabus, ensuring you're well-prepared for your exams. I specialize in online teaching, providing interactive sessions and personalized attention via Google Meet.
+        </p>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="image-container">
+            <img src="https://images.pexels.com/photos/3184428/pexels-photo-3184428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Online Communication Illustration">
+        </div>
+        <p>
+            Have any questions or need more information about our online Java classes? Feel free to reach out to me.
+        </p>
+        <p>
+            Email: rohitrsgsonar4032@gmail.com
+        </p>
+        <p>
+            
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rohit Sonar's Online Java Classes</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section, .container');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
